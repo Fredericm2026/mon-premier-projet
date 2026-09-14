@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nos services : Développement web, création d'applications, design et marketing.">
     <title>Services | FreddyNova Studio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -30,23 +31,24 @@
             max-width: 1000px;
             margin: 40px auto;
             padding: 0 20px;
+            width: 100%;
         }
-        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 30px; text-align: center; }
-        .services-grid {
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 10px; text-align: center; }
+        p.subtitle { text-align: center; color: #94a3b8; margin-bottom: 40px; }
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 25px;
         }
-        .service-card {
+        .card {
             background: linear-gradient(145deg, #131b2e, #1a243b);
             border: 1px solid #2a3654;
             border-radius: 16px;
             padding: 30px;
-            transition: transform 0.3s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
-        .service-card:hover { transform: translateY(-5px); border-color: #6366f1; }
-        .service-card h2 { color: #818cf8; font-size: 1.4rem; margin-bottom: 15px; }
-        .service-card p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+        .card h3 { color: #818cf8; margin-bottom: 12px; font-size: 1.3rem; }
+        .card p { color: #94a3b8; font-size: 0.95rem; line-height: 1.6; }
         footer { text-align: center; padding: 20px; border-top: 1px solid #2a3654; color: #64748b; font-size: 0.9rem; }
     </style>
 </head>
@@ -57,24 +59,31 @@
             <a href="index.html">Accueil</a>
             <a href="a-propos.html">À propos</a>
             <a href="services.html" class="active">Services</a>
+            <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
 
     <main>
-        <h1>Nos Domaines d'Expertise</h1>
-        <div class="services-grid">
-            <div class="service-card">
-                <h2>Développement Web & App</h2>
-                <p>Création de sites vitrines modernes, d'applications web sur mesure et d'interfaces réactives adaptées à tous les écrans.</p>
+        <h1>Nos Services</h1>
+        <p class="subtitle">Des solutions sur-mesure développées pour propulser vos projets d'entreprise.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <h3>Développement Web</h3>
+                <p>Création de sites vitrines modernes, responsive et optimisés pour le référencement naturel (SEO).</p>
             </div>
-            <div class="service-card">
-                <h2>Identité Visuelle & Design</h2>
-                <p>Conception de charte graphique, création de supports publicitaires et conception d'expériences utilisateur captivantes.</p>
+            <div class="card">
+                <h3>Applications Web & Mobile</h3>
+                <p>Conception sur-mesure d'applications de gestion et de plateformes métier performantes.</p>
             </div>
-            <div class="service-card">
-                <h2>Intégration d'IA & Automation</h2>
-                <p>Optimisation de vos flux de travail grâce à des assistants virtuels sur-mesure et des automatisations de tâches récurrentes.</p>
+            <div class="card">
+                <h3>Design & Branding</h3>
+                <p>Élaboration d'identités visuelles, logos, et maquettes d'interface utilisateur (UI/UX).</p>
+            </div>
+            <div class="card">
+                <h3>Gestion des Réseaux Sociaux</h3>
+                <p>Stratégie de contenu, animation de communauté et optimisation d'audience digitale.</p>
             </div>
         </div>
     </main>
