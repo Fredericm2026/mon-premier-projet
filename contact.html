@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez FreddyNova Studio pour discuter de vos projets informatiques et digitaux.">
+    <meta name="description" content="Contactez FreddyNova Studio.">
     <title>Contact | FreddyNova Studio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -27,48 +27,16 @@
         .logo { font-weight: 700; font-size: 1.2rem; color: #818cf8; text-decoration: none; }
         .nav-links a { color: #94a3b8; text-decoration: none; margin-left: 1.5rem; transition: color 0.3s; }
         .nav-links a:hover, .nav-links a.active { color: #ffffff; }
-        main {
-            max-width: 600px;
-            margin: 40px auto;
-            padding: 0 20px;
-            width: 100%;
-        }
-        .card {
-            background: linear-gradient(145deg, #131b2e, #1a243b);
-            border: 1px solid #2a3654;
-            border-radius: 16px;
-            padding: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-        h1 { font-size: 2rem; color: #fff; margin-bottom: 20px; text-align: center; }
-        .form-group { margin-bottom: 20px; }
-        label { display: block; color: #94a3b8; margin-bottom: 8px; font-size: 0.9rem; }
-        input, textarea {
-            width: 100%;
-            padding: 12px;
-            background-color: #0b0f19;
-            border: 1px solid #2a3654;
-            border-radius: 8px;
-            color: #fff;
-            font-size: 1rem;
-            outline: none;
-            transition: border-color 0.3s;
-        }
-        input:focus, textarea:focus { border-color: #6366f1; }
-        button {
-            width: 100%;
-            background: linear-gradient(135deg, #6366f1, #4f46e5);
-            color: #fff;
-            border: none;
-            padding: 14px;
-            border-radius: 8px;
-            font-size: 1rem;
-            font-weight: 600;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
+        main { max-width: 600px; margin: 40px auto; padding: 0 20px; width: 100%; }
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 10px; text-align: center; }
+        p.subtitle { text-align: center; color: #94a3b8; margin-bottom: 30px; }
+        form { background: #131b2e; border: 1px solid #2a3654; border-radius: 16px; padding: 30px; display: flex; flex-direction: column; gap: 15px; }
+        label { color: #cbd5e1; font-size: 0.9rem; }
+        input, textarea { background-color: #0b0f19; border: 1px solid #2a3654; color: #fff; padding: 12px; border-radius: 8px; font-size: 1rem; width: 100%; }
+        input:focus, textarea:focus { border-color: #6366f1; outline: none; }
+        button { background: linear-gradient(135deg, #6366f1, #4f46e5); color: #fff; border: none; padding: 12px; border-radius: 8px; font-weight: 600; cursor: pointer; font-size: 1rem; margin-top: 10px; }
         button:hover { background: linear-gradient(135deg, #4f46e5, #4338ca); }
-        footer { text-align: center; padding: 20px; border-top: 1px solid #2a3654; color: #64748b; font-size: 0.9rem; }
+        footer { text-align: center; padding: 20px; border-top: 1px solid #2a3654; color: #64748b; font-size: 0.9rem; margin-top: 40px; }
     </style>
 </head>
 <body>
@@ -84,24 +52,24 @@
     </nav>
 
     <main>
-        <div class="card">
-            <h1>Contactez-nous</h1>
-            <form action="https://formspree.io/f/xeaqyval" method="POST">
-                <div class="form-group">
-                    <label for="name">Nom complet</label>
-                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Adresse e-mail</label>
-                    <input type="email" id="email" name="email" placeholder="nom@exemple.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet..." required></textarea>
-                </div>
-                <button type="submit">Envoyer le message</button>
-            </form>
-        </div>
+        <h1>Contactez-nous</h1>
+        <p class="subtitle">Une idée ou un projet ? Discutons-en ensemble.</p>
+
+        <form>
+            <div>
+                <label for="name">Nom / Entreprise</label>
+                <input type="text" id="name" placeholder="Votre nom" required>
+            </div>
+            <div>
+                <label for="email">Adresse Email</label>
+                <input type="email" id="email" placeholder="votre@email.com" required>
+            </div>
+            <div>
+                <label for="message">Message ou projet concerné</label>
+                <textarea id="message" rows="5" placeholder="Décrivez votre projet ou votre demande de démo..." required></textarea>
+            </div>
+            <button type="submit">Envoyer le message</button>
+        </form>
     </main>
 
     <footer>
