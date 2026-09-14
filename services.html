@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | FreddyNova Studio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #0b0f19;
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        nav {
+            background-color: #131b2e;
+            border-bottom: 1px solid #2a3654;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 700; font-size: 1.2rem; color: #818cf8; text-decoration: none; }
+        .nav-links a { color: #94a3b8; text-decoration: none; margin-left: 1.5rem; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #ffffff; }
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 30px; text-align: center; }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .service-card {
+            background: linear-gradient(145deg, #131b2e, #1a243b);
+            border: 1px solid #2a3654;
+            border-radius: 16px;
+            padding: 30px;
+            transition: transform 0.3s ease;
+        }
+        .service-card:hover { transform: translateY(-5px); border-color: #6366f1; }
+        .service-card h2 { color: #818cf8; font-size: 1.4rem; margin-bottom: 15px; }
+        .service-card p { color: #94a3b8; line-height: 1.6; font-size: 0.95rem; }
+        footer { text-align: center; padding: 20px; border-top: 1px solid #2a3654; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">FreddyNova Studio</a>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html">À propos</a>
+            <a href="services.html" class="active">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
+    <main>
+        <h1>Nos Domaines d'Expertise</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <h2>Développement Web & App</h2>
+                <p>Création de sites vitrines modernes, d'applications web sur mesure et d'interfaces réactives adaptées à tous les écrans.</p>
+            </div>
+            <div class="service-card">
+                <h2>Identité Visuelle & Design</h2>
+                <p>Conception de charte graphique, création de supports publicitaires et conception d'expériences utilisateur captivantes.</p>
+            </div>
+            <div class="service-card">
+                <h2>Intégration d'IA & Automation</h2>
+                <p>Optimisation de vos flux de travail grâce à des assistants virtuels sur-mesure et des automatisations de tâches récurrentes.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Propulsé par FreddyNova Studio — © 2026
+    </footer>
+</body>
+</html>
