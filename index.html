@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FreddyNova Studio - Agence créative digitale : développement web, applications et stratégie digitale.">
-    <title>Accueil | FreddyNova Studio</title>
+    <meta name="description" content="Portfolio et réalisations de FreddyNova Studio.">
+    <title>Portfolio | FreddyNova Studio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -29,57 +29,102 @@
         .nav-links a:hover, .nav-links a.active { color: #ffffff; }
         main {
             max-width: 1000px;
-            margin: 60px auto;
+            margin: 40px auto;
             padding: 0 20px;
             width: 100%;
-            text-align: center;
         }
-        .hero-title { font-size: 3rem; color: #fff; margin-bottom: 20px; font-weight: 800; }
-        .hero-title span { color: #818cf8; }
-        .hero-subtitle { font-size: 1.2rem; color: #94a3b8; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; }
-        .cta-buttons { display: flex; gap: 15px; justify-content: center; }
-        .btn-primary {
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 10px; text-align: center; }
+        p.subtitle { text-align: center; color: #94a3b8; margin-bottom: 40px; }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .card {
+            background: linear-gradient(145deg, #131b2e, #1a243b);
+            border: 1px solid #2a3654;
+            border-radius: 16px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card h3 { color: #818cf8; margin-bottom: 10px; font-size: 1.3rem; }
+        .card p { color: #94a3b8; font-size: 0.95rem; line-height: 1.5; margin-bottom: 20px; }
+        .tags { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+        .tag { background-color: #0b0f19; color: #38bdf8; border: 1px solid #2a3654; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; }
+        .btn-link {
+            display: inline-block;
+            text-align: center;
             background: linear-gradient(135deg, #6366f1, #4f46e5);
             color: #fff;
-            padding: 14px 28px;
-            border-radius: 8px;
             text-decoration: none;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-        .btn-primary:hover { background: linear-gradient(135deg, #4f46e5, #4338ca); }
-        .btn-secondary {
-            background: #131b2e;
-            color: #e2e8f0;
-            border: 1px solid #2a3654;
-            padding: 14px 28px;
+            padding: 12px 16px;
             border-radius: 8px;
-            text-decoration: none;
             font-weight: 600;
-            transition: border-color 0.3s;
+            font-size: 0.95rem;
+            transition: background 0.3s, transform 0.2s;
         }
-        .btn-secondary:hover { border-color: #6366f1; }
-        footer { text-align: center; padding: 20px; border-top: 1px solid #2a3654; color: #64748b; font-size: 0.9rem; }
+        .btn-link:hover {
+            background: linear-gradient(135deg, #4f46e5, #4338ca);
+            transform: translateY(-2px);
+        }
+        footer { text-align: center; padding: 20px; border-top: 1px solid #2a3654; color: #64748b; font-size: 0.9rem; margin-top: 40px; }
     </style>
 </head>
 <body>
     <nav>
         <a href="index.html" class="logo">FreddyNova Studio</a>
         <div class="nav-links">
-            <a href="index.html" class="active">Accueil</a>
+            <a href="index.html">Accueil</a>
             <a href="a-propos.html">À propos</a>
             <a href="services.html">Services</a>
-            <a href="portfolio.html">Portfolio</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
 
     <main>
-        <h1 class="hero-title">Concevons des solutions digitales <span>sur-mesure</span></h1>
-        <p class="hero-subtitle">FreddyNova Studio transforme vos idées en projets web, applications interactives et identités visuelles performantes.</p>
-        <div class="cta-buttons">
-            <a href="portfolio.html" class="btn-primary">Découvrir nos projets</a>
-            <a href="contact.html" class="btn-secondary">Discuter d'un projet</a>
+        <h1>Nos Réalisations</h1>
+        <p class="subtitle">Découvrez une sélection des projets conçus par FreddyNova Studio.</p>
+        
+        <div class="grid">
+            <div class="card">
+                <div>
+                    <h3>Nexus Health Intelligence</h3>
+                    <p>Système de gestion hospitalière avec tableaux de bord multi-rôles et suivi d'activités.</p>
+                    <div class="tags">
+                        <span class="tag">Web App</span>
+                        <span class="tag">UI/UX</span>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn-link">Demander une démo</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Plateforme E-Commerce</h3>
+                    <p>Boutique en ligne moderne optimisée pour la conversion et l'expérience mobile.</p>
+                    <div class="tags">
+                        <span class="tag">E-Commerce</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn-link">Demander une démo</a>
+            </div>
+
+            <div class="card">
+                <div>
+                    <h3>Identité & Design Web</h3>
+                    <p>Conception de charte graphique et développement de sites vitrines d'entreprise.</p>
+                    <div class="tags">
+                        <span class="tag">Branding</span>
+                        <span class="tag">Design</span>
+                    </div>
+                </div>
+                <a href="contact.html" class="btn-link">Demander une démo</a>
+            </div>
         </div>
     </main>
 
