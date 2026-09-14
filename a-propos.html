@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos | FreddyNova Studio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: #0b0f19;
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        nav {
+            background-color: #131b2e;
+            border-bottom: 1px solid #2a3654;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo { font-weight: 700; font-size: 1.2rem; color: #818cf8; text-decoration: none; }
+        .nav-links a { color: #94a3b8; text-decoration: none; margin-left: 1.5rem; transition: color 0.3s; }
+        .nav-links a:hover, .nav-links a.active { color: #ffffff; }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: linear-gradient(145deg, #131b2e, #1a243b);
+            border: 1px solid #2a3654;
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        h1 { font-size: 2.2rem; color: #fff; margin-bottom: 20px; }
+        p { color: #94a3b8; line-height: 1.7; margin-bottom: 20px; font-size: 1.05rem; }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+        .skill-item {
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid rgba(99, 102, 241, 0.2);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            color: #818cf8;
+            font-weight: 600;
+        }
+        footer { text-align: center; padding: 20px; border-top: 1px solid #2a3654; color: #64748b; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">FreddyNova Studio</a>
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="a-propos.html" class="active">À propos</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
 
+    <main>
+        <div class="card">
+            <h1>À propos de FreddyNova Studio</h1>
+            <p>FreddyNova Studio est une agence créative et digitale dédiée au développement d'applications web modernes, au design graphique et à l'intégration de solutions basées sur l'intelligence artificielle.</p>
+            <p>Notre mission est d'accompagner les entreprises et porteurs de projets dans leur transformation numérique avec rigueur, performance et esthétisme.</p>
+            
+            <div class="skills-grid">
+                <div class="skill-item">Développement Web</div>
+                <div class="skill-item">Design Graphique</div>
+                <div class="skill-item">Solutions IA & Automation</div>
+                <div class="skill-item">Gestion de Projet</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        Propulsé par FreddyNova Studio — © 2026
+    </footer>
+</body>
+</html>
