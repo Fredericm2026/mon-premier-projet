@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="FreddyNova Studio - Création de sites web, développement d'applications et solutions digitales sur-mesure.">
+    <meta name="description" content="FreddyNova Studio - Agence créative digitale : développement web, applications et stratégie digitale.">
     <title>Accueil | FreddyNova Studio</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -28,43 +28,37 @@
         .nav-links a { color: #94a3b8; text-decoration: none; margin-left: 1.5rem; transition: color 0.3s; }
         .nav-links a:hover, .nav-links a.active { color: #ffffff; }
         main {
-            max-width: 600px;
-            margin: 40px auto;
+            max-width: 1000px;
+            margin: 60px auto;
             padding: 0 20px;
+            width: 100%;
             text-align: center;
         }
-        .card {
-            background: linear-gradient(145deg, #131b2e, #1a243b);
-            border: 1px solid #2a3654;
-            border-radius: 16px;
-            padding: 40px 30px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-        }
-        .badge {
-            display: inline-block;
-            background-color: rgba(99, 102, 241, 0.15);
-            color: #818cf8;
-            font-size: 0.85rem;
-            font-weight: 600;
-            padding: 6px 16px;
-            border-radius: 20px;
-            border: 1px solid rgba(99, 102, 241, 0.3);
-            margin-bottom: 24px;
-            text-transform: uppercase;
-        }
-        h1 { font-size: 2rem; color: #fff; margin-bottom: 16px; }
-        p { color: #94a3b8; line-height: 1.6; margin-bottom: 32px; }
-        .btn {
-            display: inline-block;
+        .hero-title { font-size: 3rem; color: #fff; margin-bottom: 20px; font-weight: 800; }
+        .hero-title span { color: #818cf8; }
+        .hero-subtitle { font-size: 1.2rem; color: #94a3b8; margin-bottom: 40px; max-width: 700px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+        .cta-buttons { display: flex; gap: 15px; justify-content: center; }
+        .btn-primary {
             background: linear-gradient(135deg, #6366f1, #4f46e5);
             color: #fff;
+            padding: 14px 28px;
+            border-radius: 8px;
             text-decoration: none;
             font-weight: 600;
-            padding: 12px 28px;
-            border-radius: 10px;
             transition: background 0.3s;
         }
-        .btn:hover { background: linear-gradient(135deg, #4f46e5, #4338ca); }
+        .btn-primary:hover { background: linear-gradient(135deg, #4f46e5, #4338ca); }
+        .btn-secondary {
+            background: #131b2e;
+            color: #e2e8f0;
+            border: 1px solid #2a3654;
+            padding: 14px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: border-color 0.3s;
+        }
+        .btn-secondary:hover { border-color: #6366f1; }
         footer { text-align: center; padding: 20px; border-top: 1px solid #2a3654; color: #64748b; font-size: 0.9rem; }
     </style>
 </head>
@@ -75,16 +69,17 @@
             <a href="index.html" class="active">Accueil</a>
             <a href="a-propos.html">À propos</a>
             <a href="services.html">Services</a>
+            <a href="portfolio.html">Portfolio</a>
             <a href="contact.html">Contact</a>
         </div>
     </nav>
 
     <main>
-        <div class="card">
-            <span class="badge">● Connecteur MCP Actif</span>
-            <h1>Bienvenue sur notre site</h1>
-            <p>Découvrez nos services créatifs, notre expertise en développement web et nos solutions d'automatisation.</p>
-            <a href="services.html" class="btn">Explorer les services</a>
+        <h1 class="hero-title">Concevons des solutions digitales <span>sur-mesure</span></h1>
+        <p class="hero-subtitle">FreddyNova Studio transforme vos idées en projets web, applications interactives et identités visuelles performantes.</p>
+        <div class="cta-buttons">
+            <a href="portfolio.html" class="btn-primary">Découvrir nos projets</a>
+            <a href="contact.html" class="btn-secondary">Discuter d'un projet</a>
         </div>
     </main>
 
