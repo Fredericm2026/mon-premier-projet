@@ -84,18 +84,19 @@
     <main>
         <div class="card">
             <h1>Contactez-nous</h1>
-            <form onsubmit="event.preventDefault(); alert('Message envoyé avec succès !');">
+            <!-- Remplacez l'action par votre propre lien Formspree -->
+            <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
                 <div class="form-group">
                     <label for="name">Nom complet</label>
-                    <input type="text" id="name" placeholder="Votre nom" required>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Adresse e-mail</label>
-                    <input type="email" id="email" placeholder="nom@exemple.com" required>
+                    <input type="email" id="email" name="email" placeholder="nom@exemple.com" required>
                 </div>
                 <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea id="message" rows="4" placeholder="Décrivez votre projet..." required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet..." required></textarea>
                 </div>
                 <button type="submit">Envoyer le message</button>
             </form>
